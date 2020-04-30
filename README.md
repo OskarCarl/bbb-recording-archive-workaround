@@ -1,5 +1,9 @@
 # Workaround for inadvertently kept recordings in BigBlueButton
 
+**Note:** I should've properly checked the `bbb-record` script before building the complex solution in the `post_archive` script.
+There are multiple redundant deletes and the sudo privileges could be reduced to only the `bbb-record` call.
+I currently do not have time to change this in here, so I'll just leave it up.
+
 This is a workaround for BBB [keeping unwanted recordings](https://github.com/bigbluebutton/bigbluebutton/issues/9202) of meetings as a result of Greenlight enabling recordings by default.
 In short: after a meeting is closed, it checks if any recordings have been explicitly requested via the button and deletes everything if this is not the case.  
 It does not fix the issue; BBB still creates recordings of all meetings if Greenlight is used.
