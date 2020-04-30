@@ -1,0 +1,10 @@
+bigbluebutton ALL = NOPASSWD: /usr/bin/bbb-record --delete *
+bigbluebutton ALL = NOPASSWD: /bin/rm -f /var/freeswitch/meetings/*
+bigbluebutton ALL = NOPASSWD: /bin/rm -rf /usr/share/red5/webapps/video/streams/*
+bigbluebutton ALL = NOPASSWD: /bin/rm -rf /var/kurento/recordings/*
+bigbluebutton ALL = NOPASSWD: /bin/rm -rf /var/kurento/screenshare/*
+bigbluebutton ALL = NOPASSWD: /bin/rm -rf /usr/share/red5/webapps/screenshare/streams/*
+bigbluebutton ALL = NOPASSWD: /bin/rm -rf /usr/share/red5/webapps/video-broadcast/streams/*
+bigbluebutton ALL = NOPASSWD: /bin/rm -rf /var/bigbluebutton/deskshare/*
+bigbluebutton ALL = NOPASSWD: /bin/rm -rf /var/bigbluebutton/*-*
+

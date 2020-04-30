@@ -1,0 +1,5 @@
+247a248,251
+> 
+> clean_script = File.expand_path('../../post_archive/delete_raw_if_no_recording.rb', __FILE__)
+> BigBlueButton.logger.info("Calling the cleaning script to remove raw files of rooms with no recording requested.")
+> system('ruby', clean_script, '-m', "#{meeting_id}") || BigBlueButton.logger.warn('Unable to call the cleaning script')
